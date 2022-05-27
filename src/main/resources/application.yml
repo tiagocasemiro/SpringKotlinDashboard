@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+feign:
+  okhttp:
+    enabled: true
+  client:
+    config:
+      default:
+        loggerLevel: basic
+        connectTimeout: 3000
+        readTimeout: 20000
+  google-news:
+    name: google-news
+    url: https://newsapi.org
